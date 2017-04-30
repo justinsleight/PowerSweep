@@ -28,53 +28,38 @@ Revision: Current Revision.
 ```
 
 
-### Installing
+### Execution
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+Open PowerShell ISE
+From ```Run``` execute ```powershell_ise```
 
+Endsure that you have script execution policies enabled on your system:
+In the PowerShell ISE or PS CMD window:
+```Set-ExecutionPolicy Unrestricted```
+
+Load PowerSweep.PS1 into a new tab, and press ```F5``` or ```Run``` button to execute script.
+
+The script will then run, and give the following output if all parameters are met:
 ```
-Give the example
-```
+Current IP Address: 192.168.0.93
+Segmented IP Address: 192 168 0 93
+First 3 Octets: 192.168.0
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+Source        Destination     IPV4Address      IPV6Address       Bytes    Time(ms) 
+------        -----------     -----------      -----------       -----    -------- 
+CANSAS-WAVE   192.168.0.1                                        32       0        
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+No additional Deployment notes at this time.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [PowerShell](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx) - PowerShell
 
 ## Contributing
 
@@ -82,13 +67,13 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+No other versioning at this time.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Justin Sleight** - *Initial work* - [Justin Sleight](https://github.com/justinsleight)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. (Upcoming)
 
 ## License
 
@@ -96,6 +81,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+Incoming
