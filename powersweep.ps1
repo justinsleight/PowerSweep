@@ -17,6 +17,7 @@ $ipcutup="$oct0 $oct1 $oct2 $oct3"
 $ipcut="$oct0.$oct1.$oct2"
 
 write-host ""
+#write ip info, segmentation, and octet split to screen
 write-host "Current IP Address:" $ipaddress
 write-host "Segmented IP Address:" $ipcutup
 write-host "First 3 Octets:" $ipcut
@@ -25,6 +26,6 @@ $ipaddresscut= "$oc0 $oc1 $oc2"
 
 $i=1
 1..254 | ForEach-Object {Test-Connection -ErrorAction SilentlyContinue -count 1 -TimeToLive 32 "$ipcut.$_"}
-#need to get a progress bar here...
+#need to get a progress bar here^
 
 write-host ""
