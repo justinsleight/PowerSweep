@@ -4,7 +4,6 @@ A Basic PowerShell Ping Sweep for Local Networks
 Justin Sleight
 2017
 
-http://forthebadge.com/images/badges/built-by-developers.svg
 
 ## Getting Started
 
