@@ -4,6 +4,8 @@ A Basic PowerShell Ping Sweep for Local Networks
 Justin Sleight
 2017
 
+http://forthebadge.com/images/badges/built-by-developers.svg
+
 ## Getting Started
 
 PowerSweep is a basic PowerShell ping wweep for local networks. It has the ability to  See deployment for notes on how to deploy the project on a live system.
@@ -30,16 +32,17 @@ Revision: Current Revision.
 
 ### Execution
 
-A step by step series of examples that tell you have to get a development env running
+Get the Dev Env Running.
 
 Open PowerShell ISE
 From ```Run``` execute ```powershell_ise```
 
-Endsure that you have script execution policies enabled on your system:
+Ensure that you have script execution policies enabled on your system:
 In the PowerShell ISE or PS CMD window:
+
 ```Set-ExecutionPolicy Unrestricted```
 
-Load PowerSweep.PS1 into a new tab, and press ```F5``` or ```Run``` button to execute script.
+Load (Open) PowerSweep.PS1 into a new tab, and press ```F5``` or ```Run``` button to execute script.
 
 The script will then run, and give the following output if all parameters are met:
 ```
