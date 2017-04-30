@@ -8,6 +8,7 @@ Write-Host "PS PowerPing - 2017 Justin Sleight" -foregroundcolor blue -backgroun
 
 $ipaddress = $(ipconfig | where {$_ -match 'IPv4.+\s(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' } | out-null; $Matches[1])
 
+#split octets into segments for processing
 $oct0=([ipaddress] $ipaddress).GetAddressBytes()[0]
 $oct1=([ipaddress] $ipaddress).GetAddressBytes()[1]
 $oct2=([ipaddress] $ipaddress).GetAddressBytes()[2]
