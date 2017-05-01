@@ -1,8 +1,12 @@
 # PowerSweep
 
 A Basic PowerShell Ping Sweep for Local Networks
-Justin Sleight
-2017
+
+Justin Sleight - 2017
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![Language: PoweShell](https://img.shields.io/badge/Language-PowerShell-blue.svg)](https://technet.microsoft.com/en-us/library/bb978526.aspx)
 
 
 ## Getting Started
