@@ -11,7 +11,7 @@ Justin Sleight - 2017
 
 ## Getting Started
 
-PowerSweep is a basic PowerShell ping wweep for local networks. It has the ability to  See deployment for notes on how to deploy the project on a live system.
+PowerSweep is a basic PowerShell ping sweep for local networks. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -35,7 +35,7 @@ Revision: Current Revision.
 
 ### Execution
 
-Get the Dev Env Running.
+Get the Dev Environment Running:
 
 Open PowerShell ISE
 From ```Run``` execute ```powershell_ise```
@@ -56,6 +56,7 @@ First 3 Octets: 192.168.0
 Source        Destination     IPV4Address      IPV6Address       Bytes    Time(ms) 
 ------        -----------     -----------      -----------       -----    -------- 
 CANSAS-WAVE   192.168.0.1                                        32       0        
+
 ```
 
 
@@ -69,7 +70,7 @@ No additional Deployment notes at this time.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/justinsleight/incoming) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://gist.github.com/justinsleight/contribute.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
