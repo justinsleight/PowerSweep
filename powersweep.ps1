@@ -17,7 +17,11 @@ $oct3=([ipaddress] $ipaddress).GetAddressBytes()[3]
 $ipcutup="$oct0 $oct1 $oct2 $oct3"
 $ipcut="$oct0.$oct1.$oct2"
 
-write-host ""
+"`n"
+"`n"  # > Line Break(s) to leave room for Progress bar. 
+"`n"
+
+write-host "" #Generate Line Break
 #write ip info, segmentation, and octet split to screen
 write-host "Current IP Address:" $ipaddress
 write-host "Segmented IP Address:" $ipcutup
@@ -25,8 +29,19 @@ write-host "First 3 Octets:" $ipcut
 
 $ipaddresscut= "$oc0 $oc1 $oc2"
 
-$i=1
-1..254 | ForEach-Object {Test-Connection -ErrorAction SilentlyContinue -count 1 -TimeToLive 32 "$ipcut.$_"}
-#need to get a progress bar here^
+$sNet = 1..254 #set count for scanning loop
+$all = $sNet.Count
+
+$i = 0
+$space = "   "
+$ilabel = "Count:"
+
+$sNet | ForEach-Object {
+   Write-Progress -PercentComplete (
+       $i*100/$all) -Activity "Scanning Address: $ipcut.$_ $space $ilabel $i/$all"  -Status 'Working'
+   Test-Connection -ErrorAction SilentlyContinue -count 1 -TimeToLive 16 "$ipcut.$_"
+   $i++
+}
+
 
 write-host ""
